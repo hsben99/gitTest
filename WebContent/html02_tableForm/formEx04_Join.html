@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Join Form 만들기 **</title>
+</head>
+<body>
+<font  size = 5  color=B6E6AC align=center> 
+	<b>*** Form & Table : 회원가입 작성 [formEx04_Join.html]  ***</b></font>
+	<img src="../image/bar.gif"  width=600> <br>
+	<Form  action="#" method=get   >
+		<table  border = 1 >
+			<caption  align="top"> <h1>   * 회원가입  *</h1></caption>
+			<tr> <td  colspan=2 align=center> <b>모든항목을입력해야 합니다</b>   </td></tr>
+			<tr>
+				<th  width=100> 이름: </th>
+				<td>  <input  type=text name="name"  size="30">  </td>
+			</tr>
+				<tr>
+				<th  width=100 > 비밀번호:  </th>
+				<td>  <input type=password  name="password"  size="10">  &nbsp; ※영문 4~8자리미만입력※ </td>
+			</tr>
+				<tr>
+				<th width=100 > 성별:  </th>
+				<td>  &nbsp;&nbsp; 
+					<input  type=radio  name="gender"  value="M"> 남자 &nbsp;&nbsp; &nbsp;&nbsp;
+					<input  type=radio  name="gender"  value="F"> 여자
+				</td>
+			</tr>
+				<tr>
+				<th width=100 > 직업:  </th>
+				<td>
+					<select  name="job">
+						<option value="1"> 기술자 
+						<option value="2"> 학생 
+						<option value="3"> 자영업자 
+						<option value="4"> 전문엔지니어
+						<option value="5"> 텔레마케터  
+					</select>
+					&nbsp; 원하는 직업을 선택하세요
+				</td>
+			</tr>
+				<tr>
+				<th width=100 > 취미:  </th>
+				<td>
+					<input type=checkbox  name="hobby" value="1"> 여행  
+					<input type=checkbox  name="hobby" value="2"> 영화보기 
+					<input type=checkbox  name="hobby" value="3"> 드라이브
+					<input type=checkbox  name="hobby" value="4"> 게임
+					<input type=checkbox  name="hobby" value="5"> 자는것 
+				</td>
+			</tr>
+				<tr>
+			<th width=100 > 자기소개:  </th>
+				<td>
+					<textArea  name="memo"  rows=10  cols=70></textArea>
+				</td>
+			</tr>
+			
+		</table>
+		<br>&nbsp;&nbsp;&nbsp;
+		<input type=submit  value="등록버튼 "> &nbsp;&nbsp;&nbsp;
+		<input type=reset   value="다시입력하기 "> 
+	</Form>
+</body>
+</html>
